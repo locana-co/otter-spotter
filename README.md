@@ -21,7 +21,7 @@ The `/points` endpoint queries all points in the database, and sends a response 
 ###Front-end
 In the map.js file, jquery is used to add a click event to the 'Get All Points' button. 
 
-On click, the app function makes a GET request to the API, which returns an array of all points points in the table. The function converts all of these points to one geojson object.
+On click, the function makes a GET request to the API, which returns an array of all points points in the table. The function converts all of these points to one geojson object.
 
 Mapbox-gl methods are then used to draw the geojson on the map, and add popups to each point.
 
