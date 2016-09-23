@@ -1,8 +1,7 @@
 $(function () {
 
-
     //initialize the map
-    mapboxgl.accessToken = '***REMOVED***';
+    mapboxgl.accessToken = config.mapboxgl.accessToken;
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9'
@@ -54,7 +53,7 @@ $(function () {
         }).fail(function() {
 
         });
-    })
+    });
 
 
     // When a click event occurs near a polygon, open a popup at the location of
